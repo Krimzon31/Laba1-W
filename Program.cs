@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Laba1_W
 {
@@ -18,14 +14,16 @@ namespace Laba1_W
             {
                 Console.WriteLine("n должен быть положительным");
             }
-            Console.WriteLine("Введите x");
-            int x = Convert.ToInt32(Console.ReadLine());
-            for (var j = 0; j <= n; j++)
-            {
-                double e = ((-1) ^ n) * ((x) ^ 2 * n) / (getFactorial(n));
-                S = S + e;
-            }
-            Console.WriteLine($"Ответ: {S}");
+            else{
+                Console.WriteLine("Введите x");
+                int x = Convert.ToInt32(Console.ReadLine());
+                for (var j = 0; j <= n; j++)
+                {
+                    double e = ((-1) ^ n) * ((x) ^ 2 * n) / (getFactorial(n));
+                    S = S + e;
+                }
+                Console.WriteLine($"Ответ: {S}");
+                }
         }
         //Считает факториал
         public static int getFactorial(int f)
