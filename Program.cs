@@ -8,25 +8,26 @@ namespace Laba1_W
         {
             double S = 0;
             Console.WriteLine("Введите n ");
-            int n = Convert.ToInt32(Console.ReadLine());
+            double n = Convert.ToDouble(Console.ReadLine());
             // проверка отрицательности n
             if (n < 0)
             {
                 Console.WriteLine("n должен быть положительным");
             }
-            else{
+            else
+            {
                 Console.WriteLine("Введите x");
-                int x = Convert.ToInt32(Console.ReadLine());
+                double x = Convert.ToDouble(Console.ReadLine());
                 for (var j = 0; j <= n; j++)
                 {
-                    double e = ((-1) ^ n) * ((x) ^ 2 * n) / (getFactorial(n));
+                    double e = (Math.Pow((-1), n) * (Math.Pow(x, 2) * n)) / (getFactorial(n));
                     S = S + e;
                 }
                 Console.WriteLine($"Ответ: {S}");
-                }
+            }
         }
         //Считает факториал
-        public static int getFactorial(int f)
+        public static int getFactorial(double f)
         {
             int result = 1;
             for (int i = 1; i <= f; i++)
