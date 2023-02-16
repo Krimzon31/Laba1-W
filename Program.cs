@@ -18,7 +18,7 @@ namespace Laba1_W
             {
                 Console.WriteLine("Введите x");
                 double x = Convert.ToDouble(Console.ReadLine());
-                for (var j = 0; j <= n; j++)
+                for (int j = 0; j <= n; j++)
                 {
                     double e = (Math.Pow((-1), n) * (Math.Pow(x, 2) * n)) / (getFactorial(n));
                     S = S + e;
