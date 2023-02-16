@@ -20,7 +20,7 @@ namespace Laba1_W
                 double x = Convert.ToDouble(Console.ReadLine());
                 for (int j = 0; j <= n; j++)
                 {
-                    double e = (Math.Pow((-1), n) * (Math.Pow(x, 2) * n)) / (getFactorial(n));
+                    double e = (Math.Pow((-1), j) * (Math.Pow(x, 2) * j)) / (getFactorial(n));
                     S = S + e;
                 }
                 Console.WriteLine($"Ответ: {S}");
